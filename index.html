@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>湖北省地理国情服务在线发布系统</title>
+	<!-- <script src="js/jquery-con.js"></script>-->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="./css/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<section id="nav">
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img src="./images/logo_boot.png"></a>
+		    </div>
+
+
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gears"></i> 服务管理 <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#service1-0"><i class="fa fa-gear"></i> 在线地图服务</a></li>
+		            <li><a href="#service1-0"><i class="fa fa-refresh"></i> 地图服务发布</a></li>
+		            <li><a href="#service1-0"><i class="fa fa-spinner"></i> 地图服务管理</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bar-chart"></i> 数据管理 <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#service2-0"><i class="fa fa fa-area-chart"></i> 数据下载</a></li>
+		            <li><a href="#service2-0"><i class="fa fa fa-bar-chart-o"></i> 数据浏览</a></li>
+		            <li><a href="#service2-0"><i class="fa fa fa-line-chart"></i> 热点推送</a></li>
+		            <li><a href="#service2-0"><i class="fa fa fa-pie-chart"></i> 历史数据</a></li>
+		            <li><a href="#service2-0"><i class="fa fa fa-pencil"></i> 用户纠错</a></li>
+		          </ul>
+		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-image-o"></i> 国情展示<span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#service3-0">综合类</a></li>
+		            <li><a href="#service3-0">主题类</a></li>
+		            <li><a href="#service3-0">统计类</a></li>
+		            <li><a href="#service3-0">分析类</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li><a href="#"  style="padding:8px;"><button class="btn btn-warning" type="submit" ><i class="fa fa-map"></i> 地图展示</button></a></li>
+		      	<li><a href="#"  style="padding:8px;" data-toggle="modal" data-target="#loginModal"><button class="btn btn-info" type="button" ><i class="fa fa-user"></i> 登陆</button></a></li>
+		      	<li><a href="#"  style="padding:8px;" data-toggle="modal" data-target="#regisModal"><button class="btn btn-info" type="button"><i class="fa fa-user-plus"></i> 注册</button></a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</section>
+
+	<section id="carousel">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="./images/2.png">
+		      <div class="carousel-caption">
+		      	<button class="btn btn-info" type="submit">		      	荆襄之地，固若金汤</button>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="./images/2.jpeg">
+		      <div class="carousel-caption">
+		      	<button class="btn btn-info" type="submit">		      	日出东方，普照荆楚</button>
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="./images/3.jpeg">
+		      <div class="carousel-caption">
+		      	<button class="btn btn-info" type="submit">		      	吴楚之地，誓不归蜀</button>
+		      </div>
+		    </div>
+		  </div>
+
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</section>
+
+	<section id="wrap">
+			<section>
+				<div class="container summary">
+					<h2>国情简介</h2>
+					<p class="lead">地理国情是国情的一部分。狭义来看，是指与地理空间紧密相连的自然环境、自然资源基本情况和特点的总和；广义来看，是指通过地理空间属性将包括自然环境与自然资源、科技教育状况、经济发展状况、政治状况、社会状况、文化传统、国际环境和国际关系等在内的各类国情进行关联与分析，从而得出能够深入揭示经济社会发展的时空演变和内在关系的综合国情。</p>
+				</div>
+			</section>
+			
+			<div class="container" id="service1-0"> 
+				<hr class="divider">	
+			</div>
+
+			<section>
+				<div class="container wrap_content">
+					<h2><i class="fa fa-gears"></i> 服务管理</h2>
+					<h3><i class="fa fa-gear"></i> 在线地图服务</h3>
+					<p>将数字高程模型、正射影像、国情要素及地表覆盖等数据发布成地图数据服务，该地图服务支持其他平台或二次开发调用。</p>
+							<div class="row">
+							  <div class="col-sm-6 col-md-3">
+							    <div class="thumbnail">
+							      <img src="./images/3.jpeg" alt="...">
+							      <div class="caption">
+							        <h3>数字高程模型</h3>
+							        <p>将数字高程模型、正射影像、国情要素及地表覆盖等数据发布成地图数据服务，该地图服务支持其他平台或二次开发调用。</p>
+							        <p class="align-r"><a href="#" class="btn btn-primary" role="button"><i class="fa fa-flag"></i> 进入地图</a></p>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-3">
+							    <div class="thumbnail">
+							      <img src="./images/2.jpeg" alt="...">
+							      <div class="caption">
+							        <h3>正射影像</h3>
+							        <p>将数字高程模型、正射影像、国情要素及地表覆盖等数据发布成地图数据服务，该地图服务支持其他平台或二次开发调用。</p>
+							        <p class="align-r"><a href="#" class="btn btn-primary" role="button"><i class="fa fa-flag"></i> 进入地图</a></p>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-3">
+							    <div class="thumbnail">
+							      <img src="./images/3.jpeg" alt="...">
+							      <div class="caption">
+							        <h3>国情要素</h3>
+							        <p>将数字高程模型、正射影像、国情要素及地表覆盖等数据发布成地图数据服务，该地图服务支持其他平台或二次开发调用。</p>
+							        <p class="align-r"><a href="#" class="btn btn-primary" role="button"><i class="fa fa-flag"></i> 进入地图</a></p>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-3">
+							    <div class="thumbnail">
+							      <img src="./images/2.jpeg" alt="...">
+							      <div class="caption">
+							        <h3>地表覆盖</h3>
+							        <p>将数字高程模型、正射影像、国情要素及地表覆盖等数据发布成地图数据服务，该地图服务支持其他平台或二次开发调用。</p>
+							        <p class="align-r"><a href="#" class="btn btn-primary" role="button"><i class="fa fa-flag"></i> 进入地图</a></p>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+
+					<h3><i class="fa fa-refresh"></i> 地图服务发布</h3>
+					<p>提供在线地图服务发布功能，将数据或者专题成果发布成供其他平台或二次开发调用的各种地图服务（该功能需用户有一定的用户权限）。
+						<a class="btn btn-success pull-right" href="#" role="button"><i class="fa fa-flag"></i> 开始发布</a></p>
+					<h3><i class="fa fa-spinner"></i> 地图服务管理</h3>
+					<p>将服务以列表的形式进行管理，对已发布的服务进行查看、编辑、删除等操作（该功能限管理员权限）。
+						<a class="btn btn-success pull-right" href="#" role="button"><i class="fa fa-flag"></i> 开始管理</a></p>
+				</div>
+			</section>
+
+			<div class="container" id="service2-0">
+				<hr class="divider">	
+			</div>
+
+			<section>
+				<div class="container wrap_content">
+					<h2><i class="fa fa-bar-chart"></i> 数据管理</h2>
+					<h3><i class="fa fa fa-area-chart"></i> 数据下载</h3>
+					<p>（1）支持按数据类型检索下载：基本统计表格数据、湖北省地理国情图集、综合统计、专题分析、地理国情监测报告；</p><p>（2）支持按行政区检索下载；</p><p>（3）支持按统计类型检索下载：自然地理要素（地形地貌，植被覆盖，水域，荒漠与裸露地表）、人文地理要素（交通网络，居民地与设施、地理单元等）；</p><p>（4）支持按年度进行检索下载。</p>
+					<div class="container" style="padding-left:3em;">
+						<div class="btn-group" role="group" aria-label="...">
+						  <button type="button" class="btn btn-primary">数据类型检索</button>
+						  <button type="button" class="btn btn-primary">行政区检索</button>
+						  <button type="button" class="btn btn-primary">统计类型检索</button>
+						   <button type="button" class="btn btn-primary">年度检索</button>
+						</div>
+					</div>
+					<h3><i class="fa fa fa-bar-chart-o"></i> 数据浏览</h3>
+					<p>支持对已有数据的浏览功能，包括地图类数据以及图表、报告等非地图类数据的浏览，并能记录和显示每一种数据浏览量和下载量。</p>
+					<table class="table table-hover table-bordered">
+						<tr class="active">
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+						</tr>
+						<tr class="warning">
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+						</tr>
+						<tr class="active">
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+						</tr>
+						<tr class="active">
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+						</tr>
+						<tr class="active">
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+							<td>数据数据</td>
+						</tr>
+					</table>
+					<h3><i class="fa fa fa-line-chart"></i> 热点推送</h3>
+					<p>通过记录的浏览量和下载量，在下载页面中自动置顶热门浏览量或热门下载量的数据。</p>
+
+					<h3><i class="fa fa fa-pie-chart"></i> 历史数据查看</h3>
+					<p>用户除了可以浏览实时更新的数据，还可以自主选择浏览历史数据，通过两个窗口分别显示或者卷帘方式显示不同时态的数据。该功能对应于地理国情信息数据管理子系统的数据库版本管理功能。</p>
+
+					<div id="highcharts"></div>
+
+					<h3><i class="fa fa fa-pencil"></i> 用户纠错</h3>
+					<p>在用户浏览地图或统计图、报表等数据时，允许用户发现错漏，并提交纠正后结果，上传到地理国情信息数据管理子系统中经过管理员的审核并通过，即可在原数据中纠正。</p>
+					<a class="btn btn-success pull-right" href="#" role="button"><i class="fa fa-pencil"></i> 我要纠错</a></p>
+				</div>
+			</section>
+
+			<div class="container" id="service3-0">
+				<hr class="divider">	
+			</div>
+
+			<section>
+				<div class="container wrap_content">
+					<h2><i class="fa fa-file-image-o"></i> 国情展示</h2>
+					<h3>综合类</h3>
+					<p>以全要素综合表达区域国情普查原始要素为目标，重点表现基础地理要素及地表覆盖内容的地理位置、分布范围、密度差异、分布规律等空间分布特征，要素之间的关系，以及地理要素的名称、分类、分级、管理归属等属性信息；主要由主图、附图、文字、图表、图片等构成。</p>
+							<div class="row">
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/3.jpeg" alt="...">
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/2.jpeg" alt="...">
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/3.jpeg" alt="...">
+							    </div>
+							  </div>
+							</div>
+					<h3>主题类</h3>
+					<p>以单要素或相关多要素表达区域国情普查原始要素为目标；重点显示耕地、园地、林地与草地，荒漠与裸露地表，水系要素，地形分区，地貌区划，道路及交通设施等专题要素的地理位置、分布范围、密度差异、分布规律等空间分布特征，地理要素的名称、分类、分级、管理归属等属性信息及要素之间的关系。</p>
+							<div class="row">
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/2.jpeg" alt="...">
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/3.jpeg" alt="...">
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/2.jpeg" alt="...">
+							    </div>
+							  </div>
+							</div>
+					<h3>统计类</h3>
+					<p>从资源、生态、经济、社会等方面，反映地理国情信息的空间分布、空间结构、地域差异，客观准确的揭示空间分布、组合规律及相互联系。</p>
+							<div class="row">
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/3.jpeg" alt="...">
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/2.jpeg" alt="...">
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/3.jpeg" alt="...">
+							    </div>
+							  </div>
+							</div>
+					<h3>分析类</h3>
+					<p>反映各类资源、环境、生态、经济要素的空间分布及其发展变化规律的检测数据，分析评估地理国情时空特征及其变化发展趋势，主要包括检测型地图产品、趋势预测型产品、相关分析型地图产品及现状评价型产品。</p>
+							<div class="row">
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/2.jpeg" alt="...">
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/3.jpeg" alt="...">
+							    </div>
+							  </div>
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="./images/2.jpeg" alt="...">
+							    </div>
+							  </div>
+							</div>
+				</div>
+			</section>
+	</section>
+
+	<div class="container">
+		<hr class="divider">	
+	</div>
+
+	<section id="footer">
+		<div class="container">
+			<a class="btn btn-danger pull-right" href="#" role="button" style="position:fixed; bottom:40px; right:3%;"><i class="fa fa-long-arrow-up "></i> Top</a>
+			<footer>
+				<p>地址：武汉市洪山区民族大道 39 号 邮编：430071</p>
+				<p>Copyright 2015 湖北省地图院 All Rights Reserverd. 版权所有</p>
+			</footer>	
+		</div>
+	</section>
+
+<!-- modal -->
+	<div class="modal fade" id="loginModal" role="dialog" aria-labelledby="gridSystemModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="gridSystemModalLabel">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="recipient-name" class="control-label">Recipient:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="form-group">
+	            <label for="message-text" class="control-label">Message:</label>
+	            <textarea class="form-control" id="message-text"></textarea>
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal fade" id="regisModal" role="dialog" aria-labelledby="gridSystemModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="gridSystemModalLabel">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="recipient-name" class="control-label">Recipient:</label>
+	            <input type="text" class="form-control" id="recipient-name">
+	          </div>
+	          <div class="form-group">
+	            <label for="message-text" class="control-label">Message:</label>
+	            <textarea class="form-control" id="message-text"></textarea>
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+
+
+	<script src="./js/lib/jquery-1.11.1.min.js"></script>
+	<script src="./js/lib/bootstrap.min.js"></script>
+	<script src="./js/highcharts.js"></script>
+	<script src="./js/highcharts-3d.js"></script>
+	<script src="./js/highcharts_config.js"></script>
+	<script src="./js/modules/exporting.js"></script>
+</body>
+</html>
